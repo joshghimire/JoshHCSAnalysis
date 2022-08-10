@@ -1,0 +1,97 @@
+Experiment number: ,,#109
+ Experiment date: ,,April-8-2022
+ Animal Strain: ,,
+ Animal Birthdate: ,,April-8-2022
+ Color of Animal: ,,Dark
+ Size of Animal: ,,Regular
+Analysis Length:,,"211:59'58"""
+Analysis Start@:,,"199:59'59"""
+Dstance Traveled:,,   4506.62(meters)
+
+Behavior Profile-Behavior List
+From Frame,To Frame,Length(frames),Behavior,Comment,
+1,20337,20336,"(null)(HangCudl, RemainHC)",LeftWall(Night),
+20337,20405,68,No Data,,
+20405,20429,24,"(null)(HangCudl, RemainHC)",LeftWall(Night),
+20429,24438,4009,No Data,,
+24438,24462,24,Stretch Body,LeftWall(Night),
+24462,24530,68,No Data,,
+24530,24536,6,Walk Right,OnBedding(Night),
+24536,24548,12,"(null)(CDtoPR, CDfromPR)",Floor(Night),
+24548,24561,13,Walk Right,Floor(Night),
+24561,24578,17,Turn,Floor(Night),
+24578,24587,9,Walk Left,OnBedding(Night),
+24587,24611,24,Unknown Behavior,,
+24611,24617,6,Remain Low,OnBedding(Night),
+24617,24631,14,Unknown Behavior,,
+24631,24643,12,Remain Partially Reared,OnBedding(Night),
+24643,24649,6,Come Down From Partially Reared,OnBedding(Night),
+24649,24661,12,Remain Low,OnBedding(Night),
+24661,24667,6,Walk Left,OnBedding(Night),
+24667,24672,5,Unknown Behavior,,
+24672,24684,12,Remain Low,OnBedding(Night),
+24684,24709,25,Unknown Behavior,,
+24709,24715,6,Rear up Partially,LeftWall(Night),
+24715,24721,6,Come Down From Partially Reared,LeftWall(Night),
+24721,24726,5,Unknown Behavior,,
+24726,24732,6,Remain Low,LeftWall(Night),
+24732,24741,9,Unknown Behavior,,
+24741,24753,12,Remain Low,LeftWall(Night),
+24753,24759,6,Turn,LeftWall(Night),
+24759,24765,6,Remain Low,LeftWall(Night),
+24765,24771,6,Rear up Partially,LeftWall(Night),
+24771,24777,6,Come Down From Partially Reared,LeftWall(Night),
+24777,24783,6,Remain Low,LeftWall(Night),
+24783,24789,6,Turn,face-right,LeftWall(Night),
+24789,24795,6,Remain Low,LeftWall(Night),
+24795,24801,6,Walk Slowly,LeftWall(Night),
+24801,24813,12,Remain Low,LeftWall(Night),
+24813,24822,9,Walk Left,LeftWall(Night),
+24822,24828,6,Walk Slowly,LeftWall(Night),
+
+Behavior Profile-Group Behavior List
+Behavir,Bouts,Bout Fraction,# Frames,Frame Fraction,Latency Frame
+Come Down,407,0.0713%,2869,0.0134%,6045
+Rear Up,500,0.0875%,3323,0.0155%,13944
+Turn,26034,4.5580%,177640,0.8270%,33
+Stretch Body,2159,0.3780%,40321,0.1877%,2506
+Hang Cuddled,4789,0.8385%,54113,0.2519%,5524
+Hang Vertically,0,0.0000%,0,0.0000%,-1
+Come Down From Partially Reared,22931,4.0147%,153831,0.7161%,84
+Come Down To Partially Reared,13419,2.3494%,92899,0.4325%,2110
+Rear up Full From Partial,11874,2.0789%,76839,0.3577%,1882
+Rear up Partially,20421,3.5753%,139774,0.6507%,54
+Land Vertically,5403,0.9460%,39453,0.1837%,5955
+Walk Left,13842,2.4235%,114612,0.5336%,27
+Walk Right,12400,2.1710%,98455,0.4583%,1081
+Stationary,6992,1.2242%,82149,0.3824%,11742
+Drink Spout1,180,0.0315%,2720,0.0127%,287408
+Eat Zone1,390,0.0683%,11548,0.0538%,1714
+Jump,1562,0.2735%,23354,0.1087%,6567
+Unknown Behavior,42058,7.3635%,1143168,5.3218%,2491
+Hang Vertically From Rear Up,4184,0.7325%,27374,0.1274%,5172
+HangVertically From HangCuddled,1552,0.2717%,11367,0.0529%,5949
+Repetitive Jumping,17,0.0030%,541,0.0025%,-54951
+Circle,0,0.0000%,0,0.0000%,-1
+Dig,98739,17.2872%,927261,4.3167%,5639
+Forage,58006,10.1557%,298352,1.3889%,5292
+Pause,1970,0.3449%,1433968,6.6756%,222329
+Urinate,0,0.0000%,0,0.0000%,-1
+Groom,4769,0.8350%,2876986,13.3932%,137
+Sleep,697,0.1220%,6573899,30.6035%,107052
+Twitch,3073,0.5380%,263461,1.2265%,107984
+Awaken,689,0.1206%,61592,0.2867%,108042
+Chew,877,0.1535%,36005,0.1676%,51814
+Sniff,19652,3.4407%,819057,3.8130%,1768
+Settling,36058,6.3130%,227266,1.0580%,5549
+Remain RearUp,9353,1.6375%,258540,1.2036%,5304
+Remain Partially Reared,33786,5.9152%,748330,3.4837%,60
+Remain Hang Vertically,4440,0.7774%,101065,0.4705%,5178
+Remain Hang Cuddled,49956,8.7463%,905243,4.2142%,5028
+Remain Low,41014,7.1807%,3404755,15.8502%,42
+Walk Slowly,14237,2.4926%,109942,0.5118%,21
+No Data,40,0.0070%,35044,0.1631%,-932123
+Drink Spout2,628,0.1099%,13738,0.0640%,74828
+Drink Spout3,0,0.0000%,0,0.0000%,-1
+Eat Zone2,2071,0.3626%,90039,0.4192%,1906
+Eat Zone3,0,0.0000%,0,0.0000%,-1
