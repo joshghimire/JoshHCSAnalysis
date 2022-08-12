@@ -9,7 +9,7 @@ close all;
 tempSessionResults = readcell('ExampleHCSResultsFileFrames.csv');
 
 %% Make a second accessoryresults file, move sessionResults to a sessionResults variable
-accessoryResults = cell(57, 7); %Create a new cell array for the 56 rows of non-critical/additional results.
+accessoryResults = cell(57, 6); %Create a new cell array for the 56 rows of non-critical/additional results.
 accessoryResults(1:11, 1:end) = tempSessionResults(1:11, 1:end);%copy top portion of tempSessionResults to new matrix
 
 numRowsResults = size(tempSessionResults, 1) - 57; %Get the number of rows of actual results(From Frame, Length Frame, Behavrior etc.)

@@ -1,11 +1,12 @@
 function [sessionResults, accessoryResults] = importHCSresult
 %8.10.22, ask for input about where session document is/are
 %Gets HCS session analysis results.
-%Returns accessoryResults cell array with 
+%Returns accessoryResults cell array with other data (name of experiement, total time doing behavior x)
+%Returns sessionResults cell array with data from analysis of session (from time x to time y, animal was doing behavior z)
 
 clear;
 close all;
-tempSessionResults = readcell('ExampleHCSResultsFileFrames.csv');
+tempSessionResults = readcell('Session1a_BPLst.CSV');
 
 %% Make a second accessoryresults file, move sessionResults to a sessionResults variable
 accessoryResults = cell(57, 7); %Create a new cell array for the 56 rows of non-critical/additional results.
