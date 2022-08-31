@@ -5,7 +5,7 @@ function lineArray = read_mixed_csv(fileName,delimiter)
 tempSessionResults = readcell(fileName);
 numRowsinHCSresultsFile = size(tempSessionResults,1);   %The number of rows found in HCS results File.
 numRowsinHCSresultsFile = numRowsinHCSresultsFile + 10; %Add a few more rows to help with next steps. 
-clear("tempSessionResults");
+clear("tempSessionResults");                            %Deleting this instead of using this as a pre-allocated cell aray for lineArray to make troubleshooting a little easier.
 
 if ~exist('delimiter','var')
     delimiter = ',';
@@ -22,9 +22,10 @@ end
     nextLine = fgetl(fid);            %# Read the next line from the file
   end
   fclose(fid);                 %# Close the file
-  lineArray = lineArray(1:lineIndex-1);  %# Remove empty cells, if needed(This only removes the "[]" in lineArray)
-  rowToDeleteinHCSResults = 10;
-  lineArray(rowToDeleteinHCSResults,:) = [];% Josh_8.31.22 Actually delete the empty rows. 
+
+  emptyRowsinlineArray = find(cellfun('isempty', lineArray)); %find the empty rows in cell lineArray
+  lineArray = lineArray(1:lineIndex-1);                 %# Remove empty cells, if needed(This only removes the "[]" in lineArray)
+  lineArray(emptyRowsinlineArray,:) = [];            % Josh_8.31.22 Actually delete the empty rows. 
   
   for iLine = 1:lineIndex-1              %# Loop over lines
     lineData = textscan(lineArray{iLine},'%s',...  %# Read strings
