@@ -6,13 +6,14 @@ function [sessionResults, accessoryResults] = importHCSresult
 
 clear;
 close all;
-tempSessionResults = readcell('ExampleHCSResultsFileFrames.csv');
+tempSessionResults = readcell('BB13Session1a_BPLst.CSV');
+numColumns = size(tempSessionResults, 2); 
 
 %% Make a second accessoryresults file, move sessionResults to a sessionResults variable
-accessoryResults = cell(57, 6); %Create a new cell array for the 56 rows of non-critical/additional results.
-accessoryResults(1:11, 1:end) = tempSessionResults(1:11, 1:end);%copy top portion of tempSessionResults to new matrix
+accessoryResults = cell(57, numColumns);                                                    %Create a new cell array for the 57 rows of non-critical/additional results.
+accessoryResults(1:11, 1:end) = tempSessionResults(1:11, 1:end);                            %copy top portion of tempSessionResults to new matrix
 
-numRowsResults = size(tempSessionResults, 1) - 57; %Get the number of rows of actual results(From Frame, Length Frame, Behavrior etc.)
+numRowsResults = size(tempSessionResults, 1) - 57;                                          %Get the number of rows of actual results(From Frame, Length Frame, Behavrior etc.)
 accessoryResults(12:end, 1:end) = tempSessionResults(( (numRowsResults+1) + 11):end, 1:end);%copy bottom portion of tempSessionResults 
 
 sessionResults = tempSessionResults(12:(11+numRowsResults), 1:end);
