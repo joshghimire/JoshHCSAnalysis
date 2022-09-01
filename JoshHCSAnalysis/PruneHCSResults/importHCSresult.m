@@ -1,4 +1,4 @@
-function [sessionResults, accessoryResults] = importHCSresult(fileName)
+function [sessionResults, accessoryResults] = importHCSresult
 %8.10.22, ask for input about where session document is/are
 %Gets HCS session analysis results.
 %Returns accessoryResults cell array with other data (name of experiement, total time doing behavior x)
@@ -6,6 +6,7 @@ function [sessionResults, accessoryResults] = importHCSresult(fileName)
 %Rows 10 and 11 in accessoryResults aren't important and might just need to
 %get deleted.
 
+fileName = uigetfile('*.csv')
 tempSessionResults = read_mixed_csv(fileName);
 numColumns = size(tempSessionResults, 2); 
 
