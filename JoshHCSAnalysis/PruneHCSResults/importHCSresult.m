@@ -1,12 +1,12 @@
-function [sessionResults, accessoryResults] = importHCSresult
+function [sessionResults, accessoryResults] = importHCSresult(fileName)
 %8.10.22, ask for input about where session document is/are
 %Gets HCS session analysis results.
 %Returns accessoryResults cell array with other data (name of experiement, total time doing behavior x)
 %Returns sessionResults cell array with data from analysis of session (from time x to time y, animal was doing behavior z)
+%Rows 10 and 11 in accessoryResults aren't important and might just need to
+%get deleted.
 
-clear;
-close all;
-tempSessionResults = readcell('BB13Session1a_BPLst.CSV');
+tempSessionResults = read_mixed_csv(fileName);
 numColumns = size(tempSessionResults, 2); 
 
 %% Make a second accessoryresults file, move sessionResults to a sessionResults variable
