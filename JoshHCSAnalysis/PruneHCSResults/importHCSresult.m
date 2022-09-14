@@ -7,7 +7,7 @@ function [sessionResults, accessoryResults] = importHCSresult
 %get deleted.
 
 fileName = uigetfile('*.csv')
-tempSessionResults = read_mixed_csv(fileName);
+tempSessionResults = read_mixed_csv_HCS(fileName);
 numColumns = size(tempSessionResults, 2); 
 
 %% Make a second accessoryresults file, move sessionResults to a sessionResults variable

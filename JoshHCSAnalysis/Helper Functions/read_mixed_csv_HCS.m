@@ -1,4 +1,4 @@
-function lineArray = read_mixed_csv(fileName,delimiter)
+function lineArray = read_mixed_csv_HCS(fileName,delimiter)
 % copied from http://stackoverflow.com/questions/4747834/import-csv-file-with-mixed-data-types
 % Brendon Watson 2014
 % Edited for HomeCageScan Josh Ghimire 2022
