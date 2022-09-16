@@ -27,7 +27,7 @@ end
   fclose(fid);                 %# Close the file
   
  
-  lineArray = lineArray(~cellfun('isempty', lineArray));                    %Use 'isempty' function on lineArray to get the rows where lineArray is NOT empty. AKA remove the empty ([]) rows in line Array.
+  lineArray = lineArray(~cellfun('isempty', lineArray));                    %Use 'isempty' function on lineArray to get the rows where lineArray is NOT empty. AKA remove the empty ([]) rows in lineArray.
   
   for iLine = 1:((lineIndex-1)-2)              %# Loop over lines. HCS results always have 2 extra blank lines that need to be accounted for.
     lineData = textscan(lineArray{iLine},'%s',...  %# Read strings
