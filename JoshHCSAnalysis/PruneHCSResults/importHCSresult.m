@@ -6,7 +6,7 @@ function [sessionResults, accessoryResults] = importHCSresult
 %Rows 10 and 11 in accessoryResults aren't important and might just need to
 %get deleted.
 
-fileName = uigetfile('*.csv')
+fileName = uigetfile('*.csv');
 tempSessionResults = read_mixed_csv_HCS(fileName);
 numColumns = size(tempSessionResults, 2); 
 
